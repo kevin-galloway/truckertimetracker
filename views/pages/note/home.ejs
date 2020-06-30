@@ -1,0 +1,22 @@
+<div>
+    
+    <form action="/note" method="POST">
+        <input  name='noteBody' type="text" placeholder="ex: Austin to OKC">
+        <button type="submit">Create Note</button>
+    </form>
+
+    My Posts:
+    <% allNotes.forEach(n => { %>
+        <div style='background-color: rgb(161, 147, 147); padding: 16px; margin-bottom: 12px'>
+            <div style='font-weight: bold'>
+                <%= n.user.fullName %>
+            </div>
+            <div style='color: black'>
+                <%= new Date(n.createdAt).toLocaleTimeString() %>
+            </div>
+            <%= n.text %>
+        </div>
+
+    <% }) %>
+
+</div>

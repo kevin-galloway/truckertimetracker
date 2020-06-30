@@ -1,0 +1,56 @@
+<style>
+    .outer-div {
+        display: flex; justify-content: center;
+        height: 100%
+    }
+
+    .inner-div {
+        display: flex; justify-content: center;
+        flex-direction: column
+    }
+
+    input {
+        border-radius: 6px;
+        border: solid 1px black;
+        padding: 12px;
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    
+    button {
+        background-color: dodgerblue;
+        font-size: 14px; font-weight: bold;
+        color: white;
+        padding: 12px;
+    }
+
+</style>
+
+<div class="outer-div" style='font-family: Arial, Helvetica, sans-serif'>
+
+    <div class="inner-div">
+
+        
+
+        <div style="background-color: white; padding: 24px; border-radius: 6px">
+            
+            <div style="font-weight: bold; font-size: 16px; margin-bottom: 16px; text-align: center">
+                Sign in
+
+            </div>
+            <form style='display: flex; flex-direction: column'>
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button type="submit">Login</button>
+            </form>
+
+            <div>
+                Don't have an account?
+                <a href="/signup">Sign Up</a>
+            </div>
+        </div>
+        
+
+    </div>
+    
+</div>
